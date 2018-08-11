@@ -1,0 +1,41 @@
+#
+# Jekyll Configuration
+# https://jekyllrb.com/docs/configuration/
+#
+
+# Defaults you can change
+# https://help.github.com/articles/configuring-jekyll/#defaults-you-can-change
+#github: [metadata]
+#encoding: UTF-8
+#kramdown:
+#  input: GFM
+#  hard_wrap: false
+#future: true
+#jailed: false
+#theme: jekyll-theme-primer
+#gfm_quirks: paragraph_end
+
+# Configuration settings you cannot change
+# https://help.github.com/articles/configuring-jekyll/#configuration-settings-you-cannot-change
+#lsi: false
+#safe: true
+#source: [your repo's top level directory]
+#incremental: false
+#highlighter: rouge
+#gist:
+#  noscript: false
+#kramdown:
+#  math_engine: mathjax
+#  syntax_highlighter: rouge
+
+# Theme
+remote_theme: yangby/yangby.github.io@theme
+title: YangBy's GitHub Pages
+description: My Point of View
+author: yangby
+javascript:
+  mathjax:
+    version: "2.7.5"
+    config: "TeX-AMS-MML_HTMLorMML"
+  google_analytics:
+    tracking_id: UA-78583323-5
