@@ -1,5 +1,6 @@
 ---
 layout: default
+tags: [demo, math]
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

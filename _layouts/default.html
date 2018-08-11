@@ -13,7 +13,9 @@
       </section>
       {% include structure/footer.html %}
     </div>
-    {% include javascript/mathjax.html %}
+    {% if page.tags contains "tex" or page.tags contains "math" %}
+      {% include javascript/mathjax.html %}
+    {% endif %}
     {% if site.javascript.google_analytics.tracking_id %}
       {% include javascript/google-analytics.html %}
     {% endif %}

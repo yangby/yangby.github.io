@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<small>
+  &sect;
+  {{ page.date | date: "%A, %B %-e, %Y" }}
+</small>
+<br />
+<h1>{{ page.title }}</h1>
+{% assign author_id = site.author | default: site.github.owner_name %}
+{% assign author_id = page.author | default: author_id %}
+{% assign author = site.data.people[author_id] %}
+{% assign author_name = author.name | default: author_id %}
+<p class="view">
+  &rArr;
+  <i>Written by</i>
+  {% if author.url %}
+    <a href="{{ author.url }}">
+      <em>{{ author_name }}</em>
+    </a>
+  {% else %}
+    <em>{{ author_name }}</em>
+  {% endif %}
+</p>
+<br />
+{{ page.content }}
+<hr />
+{% if page.categories.size > 0 %}
+  Categories:
+    {% for name in page.categories %}
+      <a href="/categories#{{ name }}">
+        &nbsp;{{ name }}
+      </a>
+    {% endfor %}
+{% endif %}
+<br />
+{% if page.tags.size > 0 %}
+  <small>
+  Tags:
+    {% for name in page.tags %}
+      <a href="/tags#{{ name }}">
+        &nbsp;{{ name }}
+      </a>
+    {% endfor %}
+  </small>
+{% endif %}
