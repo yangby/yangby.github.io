@@ -1,8 +1,9 @@
 title: Theme of My GitHub Pages
 description: This is a demo.
 show_downloads: true
-google_analytics:
 javascript:
   mathjax:
     version: "2.7.5"
     config: "TeX-AMS-MML_HTMLorMML"
+  google_analytics:
+    tracking_id:
