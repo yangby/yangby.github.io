@@ -4,7 +4,6 @@ author:
 show_downloads: true
 javascript:
   mathjax:
-    version: "2.7.5"
-    config: "TeX-AMS-MML_HTMLorMML"
+    version:
   google_analytics:
     tracking_id:
