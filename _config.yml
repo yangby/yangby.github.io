@@ -35,7 +35,6 @@ description: My Point of View
 author: yangby
 javascript:
   mathjax:
-    version: "2.7.5"
-    config: "TeX-AMS-MML_HTMLorMML"
+    version: "3.1.2"
   google_analytics:
     tracking_id: UA-78583323-5
