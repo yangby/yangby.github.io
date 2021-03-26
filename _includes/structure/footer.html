@@ -14,7 +14,7 @@
     <small>
     {% assign owner_id = site.author | default: site.github.owner_name %}
     {% assign owner = site.data.people[owner_id] %}
-      &copy; 2018 <a href="/about#contact">{{ owner.name | default: owner_id }}</a>.
+      &copy; 2018-{{ 'now' | date: "%Y" }} <a href="/about#contact">{{ owner.name | default: owner_id }}</a>.
       All rights reserved.
       &mdash; <a href="/about#credits">Credits</a>
     </small>
