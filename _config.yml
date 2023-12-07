@@ -1,10 +1,10 @@
 repository: yangby/yangby.github.io
 remote_theme: yangby/yangby.github.io@theme
-title: YangBy's GitHub Pages
+title: YangBy's Pages
 description: My Point of View
 author: yangby
 javascript:
   mathjax:
-    version: "3.1.2"
+    version: "3"
   google_analytics:
     tracking_id: UA-78583323-5
