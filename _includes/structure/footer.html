@@ -1,0 +1,23 @@
+<footer>
+  <p>
+    <a href="/about#license">
+      <img style="border-width:0"
+        alt="Creative Commons License"
+        src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" />
+      <img style="border-width:0"
+        alt="GNU Affero General Public License"
+        src="https://gnu.org/graphics/agplv3-88x31.png" />
+    </a>
+  </p>
+  <p>
+  <p>
+    <small>
+    {% assign owner_id = site.author | default: site.github.owner_name %}
+    {% assign owner = site.data.people[owner_id] %}
+      &copy; 2018-{{ 'now' | date: "%Y" }} <a href="/about#contact">{{ owner.name | default: owner_id }}</a>
+      <br />
+      All rights reserved.
+      &mdash; <a href="/about#credits">Credits</a>
+    </small>
+  </p>
+</footer>
