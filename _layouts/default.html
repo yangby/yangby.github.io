@@ -13,11 +13,6 @@
       </section>
       {% include structure/footer.html %}
     </div>
-    {% if page.tags contains "tex" or page.tags contains "math" %}
-      {% include javascript/mathjax.html %}
-    {% endif %}
-    {% if site.javascript.google_analytics.tracking_id %}
-      {% include javascript/google-analytics.html %}
-    {% endif %}
+    {% include customize/body.html %}
   </body>
 </html>

@@ -1,0 +1,5 @@
+{% if page.tags contains "tex" or page.tags contains "math" %}
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.javascript.mathjax.version | default: "3" }}/es5/tex-svg.js">
+  </script>
+{% endif %}
